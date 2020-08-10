@@ -16,11 +16,13 @@ public class ListaTelefonica {
 		//contatoDAO.getAll();
 	}
 	
-	public void adicionarContato(Contato contato) throws ErroNaGravacaoException, ErroNaLeituraException, ContatoJaCadastradoException {
+	public void adicionarContato(Contato contato) throws 
+		ErroNaGravacaoException, ErroNaLeituraException, ContatoJaCadastradoException {
 		contatoDAO.insert(contato);
 	}
 	
-	public void removerContato(Contato contato) throws ErroNaLeituraException, ErroNaGravacaoException, ContatoNaoCadastradoException {
+	public void removerContato(Contato contato) throws 
+		ErroNaLeituraException, ErroNaGravacaoException, ContatoNaoCadastradoException {
 		contatoDAO.delete(contato);
 	}
 	
